@@ -1,4 +1,3 @@
-
 GlucoTrack: Diabetes Risk Prediction Web App
 
 GlucoTrack is a Streamlit-powered web application that predicts the risk of Type II Diabetes using machine learning. Built using Python and real-world health data, the app allows users to input personal metrics and receive instant risk predictions along with recommendations and explanations.
@@ -70,9 +69,7 @@ This project demonstrates how data science can empower preventative healthcare:
 Team Members
 - Reebeka Joshi
 - Anish Manandhar
-- Shova Gurung
-- Mohammad Monirul
-- Abrar Alam Chaudhary
+
 
 Project Link
 https://biostatsfordiabetesii.streamlit.app/
