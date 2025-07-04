@@ -1,81 +1,87 @@
+GlucoTrack: Web App for Predicting Diabetes Risk
 
-GlucoTrack: Diabetes Risk Prediction Web App
+GlucoTrack is an interactive web application built with Streamlit that leverages machine learning to assess the likelihood of Type II Diabetes. Developed in Python and trained on real medical datasets, the app enables users to enter their health information and instantly receive a risk assessment, along with tailored advice and interpretability features.
 
-GlucoTrack is a Streamlit-powered web application that predicts the risk of Type II Diabetes using machine learning. Built using Python and real-world health data, the app allows users to input personal metrics and receive instant risk predictions along with recommendations and explanations.
+Project Overview  
+Created as a capstone for the Master of Data Analytics at Melbourne Institute of Technology, this project explores the use of machine learning to support proactive healthcare. The goal is to provide an accessible tool for early diabetes risk identification.
 
-About the Project
-This capstone project was developed as part of the Master of Data Analytics program at Melbourne Institute of Technology. Our aim was to apply machine learning for preventative healthcare by building a user-friendly tool that supports early detection of diabetes.
+Core Features
 
-Key Features
-- Predict diabetes risk based on:
-  - Glucose
+- Predicts diabetes risk using:
+  - Glucose levels
   - BMI
   - Insulin
   - Age
   - Blood Pressure
-  - Pregnancies
-- User-friendly interface with clean UI
-- Multiple ML models tested; Gradient Boosting selected
-- Risk-level based recommendation system
-- Explainability using SHAP plots
-- Live charts and visualizations
+  - Number of pregnancies
+- Intuitive and clean user interface
+- Multiple machine learning algorithms evaluated; Gradient Boosting chosen for deployment
+- Personalized recommendations based on risk category
+- Model interpretability through SHAP visualizations
+- Real-time charts and graphical insights
 
-Tech Stack
-Language       : Python
-Framework      : Streamlit
-ML Libraries   : scikit-learn, pandas, numpy, shap
-Visualization  : Plotly, Seaborn, Matplotlib
-UI Styling     : Custom CSS (diabetes_theme.css)
+Technology Stack
 
-File Structure
-main.py                  ← Entry point
-overview.py              ← Dashboard overview layout
-predict.py               ← Risk prediction logic
-recommendation.py        ← Recommendations based on risk
-explain.py               ← SHAP visualizations
-export.py                ← Export model results
-analytics.py             ← Data analysis functions
-diabetes_charts.py       ← Chart visualizations
-diabetes.csv             ← Dataset (Pima Indians)
-gb_model_5features.pkl   ← Trained ML model
-diabetes_theme.css       ← Custom Streamlit theme
-requirements.txt         ← Python dependencies
-radar_profile_plot.png   ← Visual result
-shap_summary_plot.png    ← SHAP interpretation
-*.json                   ← Risk level recommendation templates
+- Programming Language: Python
+- Framework: Streamlit
+- Machine Learning: scikit-learn, pandas, numpy, shap
+- Visualization: Plotly, Seaborn, Matplotlib
+- UI Styling: Custom CSS (diabetes_theme.css)
 
-How to Run
+Project Structure
+
+- main.py: Main application script
+- overview.py: Dashboard and summary layout
+- predict.py: Handles risk prediction logic
+- recommendation.py: Generates recommendations based on risk output
+- explain.py: SHAP-based model explanations
+- export.py: Exporting prediction results
+- analytics.py: Data analysis utilities
+- diabetes_charts.py: Visualization components
+- diabetes.csv: Pima Indians Diabetes dataset
+- gb_model_5features.pkl: Pre-trained Gradient Boosting model
+- diabetes_theme.css: Custom theme for Streamlit
+- requirements.txt: Python package dependencies
+- radar_profile_plot.png: Example output visualization
+- shap_summary_plot.png: SHAP summary interpretation
+- *.json: Templates for risk-based recommendations
+
+Getting Started
+
 1. Clone the repository:
    git clone https://github.com/Rebecca211/BioStatsForDiabetesII.git
    cd BioStatsForDiabetesII
 
-2. Install dependencies:
+2. Install the required packages:
    pip install -r requirements.txt
 
-3. Launch the app:
+3. Start the application:
    streamlit run main.py
 
-Model Performance
-- Best Model: Gradient Boosting Classifier
-- Accuracy: ~91%
-- ROC-AUC Score: ~90%
-- Explanation: SHAP plots show the influence of features like Glucose, BMI, and Age.
+Model Highlights
 
-Impact and Relevance
-This project demonstrates how data science can empower preventative healthcare:
-- Helps users assess diabetes risk early
-- Aids clinicians with a visual, interpretable tool
-- Encourages data-driven health decisions
+- Selected Model: Gradient Boosting Classifier
+- Accuracy: Approximately 91%
+- ROC-AUC: Around 90%
+- Feature Importance: SHAP plots highlight Glucose, BMI, and Age as key predictors
 
-Team Members
+Significance
+
+This application showcases the practical value of data science in preventive medicine by:
+- Enabling users to check their diabetes risk early
+- Providing clinicians with an interpretable, visual tool
+- Promoting evidence-based health choices
+
+Contributors
+
 - Reebeka Joshi
 - Anish Manandhar
 - Shova Gurung
 - Mohammad Monirul
 - Abrar Alam Chaudhary
 
-Project Link
+Live Demo  
 https://biostatsfordiabetesii.streamlit.app/
 
-Contact
-For suggestions or collaboration, reach out via LinkedIn: https://www.linkedin.com/in/rebekajoshi
+Contact  
+For feedback or collaboration, connect on LinkedIn: https://www.linkedin.com/in/abrar-alam-chowdhury/
