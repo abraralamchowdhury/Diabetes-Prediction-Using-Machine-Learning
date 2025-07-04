@@ -78,7 +78,7 @@ Contributors
 - Anish Manandhar
 - Shova Gurung
 - Mohammad Monirul
-- Abrar Alam Chaudhary
+- Abrar Alam Chowdhury
 
 Live Demo  
 https://biostatsfordiabetesii.streamlit.app/
